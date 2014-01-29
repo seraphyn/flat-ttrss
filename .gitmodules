@@ -1,0 +1,3 @@
+[submodule "php/themes/feedly"]
+	path = php/themes/feedly
+	url = https://github.com/levito/tt-rss-feedly-theme.git

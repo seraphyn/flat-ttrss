@@ -1,0 +1,1060 @@
+/**/
+body,
+body#ttrssPrefs, 
+body#ttrssLogin {
+    color: rgb(5, 5, 5);
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+body#ttrssMain  {
+	background: rgb(220, 220, 220);
+    color: rgb(85, 85, 85);
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(176,176,176);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+
+
+/* background and border */
+body, 
+#feeds-holder,
+#main-toolbar,
+#toolbar, 
+#headlines-frame {
+	background-color: transparent;
+	background-image: none;
+	border: none;
+}
+
+#content-wrap {
+	border: none;
+}
+
+
+div#headlines-toolbar {
+
+}
+
+div#headlines-frame {
+	background-color: rgb(160,160,160) !important;
+	
+	background-image: url(images/grauerSkin_hgr_l.png);
+	background-repeat: repeat-y;
+}
+
+div#headlines-wrap-inner {
+	border: solid 1px rgb(100,100,100);
+	border-width: 1px 0px 0px 1px;
+    border-radius: 7px 0px 0px 0px ;
+    -moz-border-radius: 7px 0px 0px 0px;
+    -webkit-border-radius: 7px 0px 0px 0px;
+	background-color: transparent !important;
+	
+
+	
+}
+div#headlines-toolbar {
+	display:block;
+	border: none; 
+	padding: 2px 0px 1px 20px !important;
+	margin: 0px !important;
+	font-size: 1.0em !important;
+	
+	line-height: normal;	
+	height:42px;
+	border-bottom: 1px solid rgb(150,150,150);
+	
+	background-image: 	url(images/grauerSkin_hgr_ol.png),
+						url(images/grauerSkin_hgr_o.png), 			 
+						url(images/grauerSkin_hgr_l.png);
+						
+	background-repeat: 		no-repeat;
+	background-position: 	0px 0px,
+							32px 0px,
+							0px 32px;
+	background-size: 		32px 32px,
+							2000px 32px,
+							32px 2000px;
+	
+}
+div#headlines-toolbar a{
+	color: rgb( 120, 120, 120);
+	font-size: 1.1em !important;
+}
+div#headlines-toolbar a:hover{
+	color: rgb( 0, 0, 0);
+	font-size: 1.1em !important;
+}
+
+
+div#headlines-toolbar span.r {
+	display:block;
+    float: none;
+	position: relative;
+    
+	margin: 0px 0px 4px -20px;
+	padding: 0px ;
+	
+	border-bottom: 1px solid rgb(223,224,221);
+	
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.2em !important;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+}
+div#headlines-toolbar #feed_title {
+ padding: 0px 4px 0px 14px;
+}
+
+div#headlines-toolbar span.r a,
+div#headlines-toolbar span.r a:hover{
+	color: rgb( 0, 0, 0);
+}
+
+
+#overlay {
+	vertical-align: middle;
+}
+
+#overlay_inner {
+    font-weight: bold;
+    width: 320px;
+    margin: auto;
+}
+
+
+
+/*Splitter*/
+.claro .dijitSplitterH,
+.claro .dijitSplitterV,
+.claro .dijitSplitterHHover,
+.claro .dijitSplitterVHover {
+    font-size: 1px;
+    background-color: transparent;
+}
+
+.claro .dijitSplitterHHover {
+	background-image: none;
+    background-image: -moz-linear-gradient(left center , rgba(255, 255, 255, 0) 25px, 
+														 rgba(255, 255, 255, 0.75) 50%, 
+														 rgba(255, 255, 255, 0) 75%);
+}
+
+.claro .dijitSplitterVHover {
+    background-image: none;
+    background-image: -moz-linear-gradient(center top , rgba(255, 255, 255, 0) 25%,
+														rgba(255, 255, 255, 0.75) 50%,
+														rgba(255, 255, 255, 0) 75%);
+}
+/**/
+
+/*Article Toolbar*/
+div#toolbar .button_nav img{
+	display:none;
+}
+div#toolbar .button_nav{
+	margin-right: 4px;
+    border: 0px solid rgb( 135, 134, 131);
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	
+	background-color: transparent !important;
+	background-image: url("images/grauerSkin_article_toolbar.png");
+	background-size: 120px 20px;	
+	background-repeat: no-repeat;
+	
+	width: 20px;
+	height: 20px;
+	
+	opacity: 1;
+	overflow: hidden;
+	cursor: pointer;
+	
+	vertical-align: middle !important;
+	text-align:	center !important;
+
+	transition-property: border, box-shadow;
+	transition-duration: 0.35s; 
+}
+
+div#toolbar .button_nav[title~="Subscribe"]{
+	background-position: -19px center;
+}
+div#toolbar .button_nav[title~="Toggle"]{
+	background-position: 0px center;
+}
+div#toolbar .button_nav[title~="Mark"]{
+	background-position: -40px center;
+}
+div#toolbar .button_nav[title~="Refresh"]{
+	background-position: -60px center;
+}
+div#toolbar .button_nav[title~="Previous"]{
+	background-position: -80px center;
+}
+div#toolbar .button_nav[title~="Next"]{
+	background-position: -100px center;
+	
+}
+			
+div#toolbar .button_nav:hover{
+	border-color: rgb( 85, 84, 81) !important;
+	background-color: rgb( 240, 240, 240)  !important;
+	background-image: url("images/grauerSkin_article_toolbar.png");
+	background-size: 120px 20px;	
+	background-repeat: no-repeat;
+	
+	box-shadow: 0px 0px 3px rgba( 0, 0, 0, 0.5) !important;
+	
+	opacity: 1;
+	cursor: pointer;
+	
+	transition-property: border, box-shadow;
+	transition-duration: 0.35s; 
+}
+/**/
+
+/*Toolbar*/
+/*fix*/
+div#toolbar .dijitDropDownButton .dijitArrowButtonInner,
+div#toolbar .dijitComboButton .dijitArrowButtonInner {
+    height: 16px;
+    width: 16px;
+	padding: 1px;	
+}
+
+div#toolbar .dijitButtonContents,
+div#toolbar .dijitSelectLabel, 
+div#toolbar .dijitTextBox .dijitInputInner, 
+div#toolbar .dijitValidationTextBox .dijitValidationContainer {
+    padding: 0px 0px;
+}
+/**/
+div#toolbar .dijitButton .dijitButtonNode,
+div#toolbar .dijitDropDownButton .dijitButtonNode, 
+div#toolbar .dijitComboButton .dijitButtonNode, 
+div#toolbar .dijitToggleButton .dijitButtonNode, 
+div#toolbar .dijitComboBox .dijitButtonNode {
+    padding: 0px;
+	background-color: transbarent;
+	background-image: none;
+	border-width: 0px;
+	border-radius: 0px;
+}
+
+div#toolbar .dijitButtonHover .dijitButtonNode,
+div#toolbar .dijitDropDownButtonHover .dijitButtonNode, 
+div#toolbar .dijitComboButtonHover .dijitButtonNode, 
+div#toolbar .dijitToggleButtonHover .dijitButtonNode, 
+div#toolbar .dijitComboBoxHover .dijitButtonNode {
+    padding: 0px;
+	background-color: transbarent;
+	background-image: none;
+	border-width: 0px;
+	border-radius: 0px;
+}	
+/*  */
+div#toolbar .dijitButton .dijitButtonNode
+ {  	
+	text-align: left;
+	font-size: 1.4em;
+	color: rgb(81,86,81);
+	background-color: transparent;
+	background-image:none;
+}
+div#toolbar .dijitButtonHover .dijitButtonNode	{
+
+}
+/*hgr*/
+div#headlines-toolbar .dijitSelect,
+div#toolbar .dijitSelect,
+div#toolbar .dijitComboButton,
+div#toolbar .dijitDropDownButton {
+    border: 1px solid rgba( 55, 64, 71, 0.5);
+	background-color: transparent;
+	background-image: none;
+	
+	transition-property: border, box-shadow;
+	transition-duration: 0.35s; 
+}
+div#headlines-toolbar .dijitSelectHover,
+div#headlines-toolbar .dijitSelectOpened,
+div#toolbar .dijitSelectHover , 
+div#toolbar .dijitSelectOpened,
+div#toolbar .dijitComboButtonHover,
+div#toolbar .dijitComboButtonOpened,
+div#toolbar .dijitDropDownButtonHover,
+div#toolbar .dijitDropDownButtonOpened {
+    border-color: rgba( 95, 94, 91, 0.8);
+	background-color: transparent;	
+	background-image: none;
+	box-shadow: 0px 0px 3px rgba( 0, 0, 0, 0.5);
+	
+	transition-property: border, box-shadow;
+	transition-duration: 0.35s; 
+}
+
+/*links innen*/
+div#headlines-toolbar .dijitSelect .dijitButtonContents,
+div#toolbar .dijitSelect .dijitButtonContents,
+div#toolbar .dijitComboButton .dijitButtonNode,
+div#toolbar .dijitDropDownButton .dijitButtonNode {
+    padding: 0px; /*hover fix*/
+	background-color: transparent;
+		
+	border-width: 1px;
+    border-style: none solid none none;
+    border-color: rgba( 55, 64, 71, 0.5);
+		
+	transition-property: background-color, border;
+	transition-duration: 0.35s; 
+}
+div#toolbar .dijitComboButton .dijitButtonNode+.dijitButtonNode,
+div#toolbar .dijitDropDownButton .dijitButtonNode {
+	border-width: 0px; /*fix ^^*/	
+}
+
+div#headlines-toolbar .dijitSelectHover .dijitButtonContents,
+div#headlines-toolbar .dijitSelectOpened .dijitButtonContents,
+div#toolbar .dijitSelectHover .dijitButtonContents,
+div#toolbar .dijitSelectOpened   .dijitButtonContents,
+div#toolbar .dijitComboButtonHover .dijitButtonNode,
+div#toolbar .dijitComboButtonOpened .dijitButtonNode,
+div#toolbar .dijitDropDownButtonHover .dijitButtonNode,
+div#toolbar .dijitDropDownButtonOpened .dijitButtonNode {
+	background-color: rgba( 250, 250, 250,0.6);
+    border-color: rgba( 95, 94, 91, 1);	
+	background-image: none;	
+}
+
+/*rechts button*/
+div#headlines-toolbar .dijitSelect .dijitDownArrowButton,
+div#toolbar .dijitSelect .dijitDownArrowButton,
+div#toolbar .dijitComboButton .dijitArrowButton {
+    padding: 0px;
+	border: 1px solid border-color: rgb( 251, 251, 251);
+	background-color: transparent;
+	background-image: linear-gradient(	rgba(255, 255, 255, 0.5) 0%, 
+										rgba(255, 255, 255, 0) 100%);
+}
+div#headlines-toolbar .dijitSelectHover .dijitDownArrowButton,
+div#headlines-toolbar .dijitSelectOpened .dijitDownArrowButton,
+div#toolbar .dijitSelectHover .dijitDownArrowButton, 
+div#toolbar .dijitSelectOpened  .dijitDownArrowButton,
+div#toolbar .dijitComboButtonHover .dijitArrowButton,
+div#toolbar .dijitComboButtonOpened .dijitArrowButton {
+    border-color: rgb( 251, 251, 251);	
+	background-color: transparent;	
+	
+	transition-property: background-color, border ;
+	transition-duration: 0.35s; 
+}
+
+/* -- Beschriftung -- */
+div#headlines-toolbar .dijitSelect .dijitButtonText,
+div#toolbar .dijitSelect .dijitButtonText,
+div#toolbar .dijitComboButton .dijitButtonText,
+div#toolbar .dijitDropDownButton .dijitButtonText {
+	padding: 0px 2px 0px 4px;
+	margin: 0px;
+	white-space: nowrap;
+    text-align: left;
+	font-size: 1.0em;
+	color: rgb(81,86,81);
+	background-color: rgba( 200, 0, 0, 0.0);
+	transition-property: color;
+	transition-duration: 0.35s; 	
+}
+div#headlines-toolbar .dijitSelect .dijitButtonText{
+	font-size: 1.0em; /*fix*/
+}
+div#headlines-toolbar .dijitSelectHover .dijitButtonText,
+div#headlines-toolbar .dijitSelectOpened .dijitButtonText,
+div#toolbar .dijitSelectHover .dijitButtonText, 
+div#toolbar .dijitSelectOpened .dijitButtonText,
+div#toolbar .dijitComboButtonHover .dijitButtonText, 
+div#toolbar .dijitComboButtonOpened .dijitButtonText,
+div#toolbar .dijitDropDownButtonHover .dijitButtonText, 
+div#toolbar .dijitDropDownButtonOpened .dijitButtonText {
+	color: rgb(31,36,41);
+	background-color: transparent;
+	background-image: none;
+}
+
+/**/
+/*menue*/
+#ttrssMain > .dijitPopup {
+    
+}
+
+#ttrssMain .dijitMenu {
+	padding:2px;
+	background-color: rgb(248,248,248);
+	border: 1px solid rgb( 81, 86, 82) !important;
+	box-shadow: 0px 0px 5px rgba( 0, 0, 0, 0.5);
+}
+
+#ttrssMain .dijitMenuItem > *{
+	font-size: 1.4em;
+	color: rgb(31,36,41);
+	padding: 0px;
+	border-top:1px solid rgba( 0, 0, 0,0) !important;
+	border-bottom:1px solid rgba( 0, 0, 0,0) !important;
+}
+
+#ttrssMain .dijitSelectSelectedOption * {
+    font-weight: bold;
+	color: rgb(31,36,41);
+}
+
+#ttrssMain .dijitMenuItem td {
+	border: none;
+}
+
+#ttrssMain .dijitMenuItem td.dijitMenuItemLabel{
+	padding: 1px 4px;
+}
+
+#ttrssMain .dijitMenuItemSelected  > *{
+	background-color: rgb(230,230,230) !important;
+	background-image: none !important;
+}
+
+#ttrssMain .dijitMenuItemHover > * {
+	background-color: rgb(230,230,230) !important;
+	background-image: linear-gradient(	rgba( 85, 85, 85, 0.2) 0%,
+										rgba(235, 235, 235, 0.2) 2px,
+										rgba(232, 232, 232, 0.2) 30%,
+										rgba(245, 245, 245, 0.5) 85%) !important;
+    background-repeat: repeat-x;
+	border-top:1px solid rgb(253, 253, 253) !important;
+	border-bottom:1px solid rgb(221, 221, 221) !important;
+	
+}
+#ttrssMain .dijitMenuItemDisabled,
+#ttrssMain .dijitMenuItemDisabled > * {
+	background-color: transparent  !important;
+	background-image: none !important;
+	border-bottom: 1px solid rgb(120,120,120) !important;
+}
+
+
+/* Feed List */
+#feeds-holder{
+	overflow-y: auto;
+}
+#ttrssMain #feedTree{
+    height:auto !important;
+	
+	margin-top : 40px;
+	margin-right : 6px;
+	padding: 20px 0px 0px 0px;
+	
+	background-color: rgb(229, 229, 229);
+	border-radius: 0px 8px 8px 0px;
+	-moz-border-radius: 0px 8px 8px 0px;
+	-webkit-border-radius: 0px 8px 8px 0px;
+	border: solid 1px rgb(180,180,180);
+	border-left:0px;
+	box-shadow: 1px 1px 4px rgba(180,180,180, 0.5);
+}
+
+#ttrssMain #feedTree > .dijitTreeIsRoot{
+	border: 0px solid rgb(208,208,208) !important;
+	margin: 0px !important;
+
+}
+
+#ttrssMain .dijitTreeIsRoot > .dijitTreeRow {
+	border-top: 1px solid rgb(224,224,224) !important;
+	margin: 0px 0px 4px 0px; 
+}
+
+#ttrssMain .dijitTreeIsRoot > .dijitTreeContainer{
+	border: 0px solid rgb(180,0,0); 
+}
+
+#ttrssMain .dijitTreeContainer  > .dijitTreeIsRoot {
+	border-top: 0px solid rgb(0,0,224);
+	margin: 0px 0px 4px 0px; 
+}
+
+#ttrssMain #feedTree > .dijitTreeIsRoot:before{
+	content: "Feeds" ;
+    color: rgb(0, 0, 0);
+	font-family: 	Times, "Times New Roman", Georgia, serif;
+    font-size: 2.2em;
+	padding: 0px 0px 0px 20px !important;
+}
+
+#ttrssMain .dijitTreeRow,
+#ttrssMain .dijitTreeRowHover,
+#ttrssMain .dijitTreeRowSelected {
+    width:100% !important;
+	border: 0px solid rgb(180,0,0); 
+    padding: 4px 0px 4px 0px;
+    margin: 0px;
+    border: 0px;
+	font-size: 1.2em;
+    color: rgb(0, 0, 0);
+	margin-right: 0px;
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+}
+
+#ttrssMain .dijitTreeRowSelected {
+    background-color: rgb(249, 249, 249);
+	background-image: url("");
+}
+
+#ttrssMain .dijitTreeRowHover {
+    background-color: rgb(240, 240, 240);
+	background-image: url("");
+    transition-duration: 0.25s;
+}
+
+#ttrssMain .dijitTreeExpando {
+    background-image: url("images/grauerSkin_treeExpandImages.png");
+}
+
+#ttrssMain .dijitFolderClosed ,
+#ttrssMain .dijitFolderOpened{
+	background-image: url("images/grauerSkin_commonIconsObjActEnabled.png");
+}
+
+#ttrssMain .dijitTreeExpandoLeaf,
+#ttrssMain .dj_ie6 .dijitTreeExpandoLeaf {
+    background-image: none;
+}
+
+/* Entries */
+/* --- Listen Entrie-Anzeige --- */
+div.hl.even, div.hl.even.Unread, div.hl.even.Selected, div.hl.even.active,
+div.hl.odd,  div.hl.odd.Unread,  div.hl.odd.Selected, div.hl.odd.active{
+	width:96%;
+	max-width:880px;
+	background-color: rgb(226, 226, 226) !important;
+	background-image: url("") !important;
+	
+	margin: 0px;
+	padding: 2px;
+	
+	border-radius: 0px 8px 0px 0px;
+	-moz-border-radius: 0px 8px 0px 0px;
+	-webkit-border-radius: 0px 8px 0px 0px;
+	border: solid 1px rgb(110,110,110); 
+	border-left: none;
+	border-bottom: none;
+	min-height: 24px;
+	
+}
+
+div.hl.even.Unread,
+div.hl.odd.Unread {
+	background-color: rgb(240, 240, 240) !important;
+}
+
+div.hl.even.Selected,
+div.hl.odd.Selected{
+    border-color: rgb(0,0,0);
+	background-color: rgb(253, 253, 253) !important;
+ }
+
+div.hl.even.active,
+div.hl.odd.active {
+    border-color: rgb(0,0,0);
+	background-color: rgb(253, 253, 253) !important;
+	box-shadow: -1px 0px 2px rgba( 0, 0, 0, 0.5);
+}
+
+div.hlLeft,
+div.hlTitle,
+span.hlUpdated ,
+div.hlRight {
+	display: table-cell;
+}
+
+div.hlLeft {
+	vertical-align: middle;
+	white-space: nowrap;
+    padding-left: 8px;
+}
+
+div.hlTitle {
+	padding: 0px 8px 0px 4px;
+	vertical-align: middle;
+    width: 100%;
+}
+
+span.hlContent{
+    vertical-align: middle;
+	display: inline-block;
+	width: 100% !important;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+	
+div.hl.active a.title {
+    color: rgb(0, 0, 0);
+}
+	
+span.hlContent a:hover {
+    color: rgb(0, 0, 0);
+}
+
+div.hl span.hlContent a{
+	width: 10px !important;
+	display: inline-block;
+	white-space: nowrap;
+
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 1.1em !important;
+	color: rgb(70, 70, 70);
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+div.hl.Unread span.hlContent a{
+    font-weight: bold;
+	font-style: normal;
+	font-size: 1.2em !important;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+div.hl.Selected span.hlContent a{
+	font-size: 12px !important;
+	font-family: sans-serif;
+}
+
+div.hl.active span.hlContent a {
+    font-weight: bold;
+	font-style: normal;
+	font-size: 1.4em !important;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+.Unread span.contentPreview ,
+.Unread span.contentPreview:hover {
+    font-weight: normal;
+	font-style: normal;
+	color: rgb(140, 140, 140);
+	font-size: 10px !important;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+ span.contentPreview ,
+ span.contentPreview:hover {
+	font-weight: lighter;
+	font-style: italic;
+	color: rgb(140, 140, 140);
+	font-size: 10px !important;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+.active span.contentPreview {
+display: none;
+}
+
+span.hlUpdated {
+    color: gray;
+    min-width: 100px;
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+    text-align: right;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+ div.hlFeed,
+ span.updated,
+ span.updated ~ div{
+	vertical-align: top !important;
+}
+
+div.hlFeed{
+	text-align: right;
+}
+
+div..hlFeed a {
+    color: gray;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 8px;
+	display:block;
+	width:120px !important;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+div.hlFeed a:hover {
+    color: rgb( 0, 0, 0);
+}
+
+#content-insert {
+    padding: 0px;
+    overflow: auto;
+	border-radius: 0px;
+	border: 1px solid rgb(140, 140, 140);
+	border-bottom-width: 0px;
+    border-right-width: 0px;
+	background-color: rgb(169, 169, 169) !important;
+}
+
+div.postReply  {
+	width: 96%;
+	max-width: 880px;
+	border-bottom: 1px solid rgb(140, 140, 140);
+	border-right: 1px solid rgb(140, 140, 140);
+}
+
+div.postReply a {
+    color: rgb(176, 176, 176) !important;
+}
+
+div.postReply a:hover{
+color: rgb(76, 76, 76) !important;
+}
+
+div.postReply div.postHeader {
+	border: none;
+	border-bottom: 1px solid rgb(240, 240, 240);
+	
+	background-color : rgb(249, 249, 249)  !important;
+	background-image: url("") !important;
+	padding:6px 0px 0px 0px;    
+	color: rgb(144, 144, 144);
+	box-shadow:none;
+
+}
+
+.postReply .postDate { 
+    font-weight: normal;
+	font-style: normal;
+	color: rgb(140, 140, 140);
+	font-size: 10px !important;
+    text-align: right;
+    float: right;
+	padding-right: 10px;
+}
+
+.postReply .postTitle,
+.postReply .postTitle a,
+.postReply .postTitle a:hover {
+    font-weight: bold !important;
+	font-style: normal !important;
+	color: rgb(0, 0, 0) !important;
+	font-size: 16px !important;
+    white-space: nowrap;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	padding: 0px 4px 4px 20px;
+}
+
+.postHeader .postTags {
+padding: 0px 0px 2px 36px;
+float:none !important;
+clear:both;
+}
+.postTags ~ div{
+display:none;
+}
+
+.postReply .postContent {
+	background-color : rgb(246, 246, 246)  !important;
+	background-image: url("") !important;
+	padding: 20px 50px 20px 80px !important;
+}
+
+.postReply .postContent p {
+    max-width: 100% !important;
+}
+
+.postReply .postContent a {
+    color: rgb(76, 70, 160) !important;
+	color: rgb(50, 50, 50) !important;
+	font-weight: bold;
+}
+
+.postReply .postContent a:hover {
+	color: rgb(80, 80, 220) !important;
+} 
+
+/* --- Kombinierte Entrie-Anzeige --- */
+/* zu */
+.cdm.even, .cdm.even.Unread, .cdm.even.Selected,
+.cdm.odd,  .cdm.odd.Unread,  .cdm.odd.Selected {
+	width:96%;
+	max-width:880px;
+	background-color : rgb(246, 246, 246)  !important;
+	
+	background-image: 		url(images/grauerSkin_hgr_l.png) !important;
+	background-repeat: 		no-repeat  !important;
+	background-position: 	0px 0px  !important;
+	background-size:		32px 2000px  !important;
+	
+	margin-left: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	
+	border-radius: 0px 4px 4px 0px;
+	-moz-border-radius: 0px 4px 4px 0px;
+	-webkit-border-radius: 0px 4px 4px 0px;
+	border: solid 1px rgb(110,110,110) !important; 
+	border-left: none !important;
+	border-bottom: none !important;
+	box-shadow: 0px 0px 0px !important;
+}
+
+.cdm.active,
+.cdm.even.active,
+.cdm.odd.active {
+	
+	background-color : rgb(246, 246, 246)  !important;
+	background-image: 		url(images/grauerSkin_hgr_l.png) !important;
+	background-repeat: 		no-repeat  !important;
+	background-position: 	0px 0px  !important;
+	background-size:		32px 2000px  !important;
+	
+    border-color: rgb(36, 36, 40) !important;
+    box-shadow: -1px 0px 3px rgba( 0, 0, 0, 0.3) !important;
+}
+
+/* auf */
+.cdm.even.expanded, .cdm.even.expanded.Unread, .cdm.even.expanded.Selected,
+.cdm.odd.expanded,  .cdm.odd.expanded.Unread,  .cdm.odd.expanded.Selected {
+	width:96%;
+	max-width:880px;
+	background-color : rgb(246, 246, 246)  !important;
+	background-image: 		url(images/grauerSkin_hgr_l.png) !important;
+	background-repeat: 		no-repeat  !important;
+	background-position: 	0px 0px  !important;
+	background-size:		32px 2000px  !important;
+
+	margin-left: 0px !important;
+	margin-top: 2px !important;
+	margin-bottom: 2px !important;
+
+	border-radius: 0px 4px 4px 0px;
+	-moz-border-radius: 0px 4px 4px 0px;
+	-webkit-border-radius: 0px 4px 4px 0px;
+	border: solid 1px rgb(110,110,110) !important; 
+	border-left: none !important;
+	box-shadow: 0px 0px 0px !important;
+}
+
+.cdmHeader > * {
+    display: table-cell !important;
+    padding: 0px !important;
+	margin:0px !important;
+}
+
+.expanded .cdmHeader  > * {
+    display: table-cell !important;
+    padding: 0px !important;
+	margin: 0px !important;
+}
+
+.cdmHeader {
+	display : block !important;
+	background-color : rgb(249, 249, 249) !important;
+	/*background-image: url("") !important;*/
+	padding: 12px 8px 4px 20px ;
+	border-bottom: 1px solid rgb(230,230,230);
+	border-radius: 0px 12px 0px 0px;
+	
+	background-image: 		url(images/grauerSkin_hgr_l.png) !important;
+	background-repeat: 		no-repeat  !important;
+	background-position: 	0px 0px  !important;
+	background-size:		32px 2000px  !important;
+	box-shadow: -6px 0px 4px rgba( 30, 30, 30, 0.05) 
+	
+}
+
+.active.Selected .cdmHeader,
+.expanded .cdmHeader {
+	display : block !important;
+	background-color : rgb(249, 249, 249) !important;
+	/* background-image: url("") !important; */
+	padding: 12px 8px 4px 20px !important;
+	border-bottom: 1px solid rgb(230,230,230);
+	border-radius: 0px 12px 0px 0px;
+	
+	background-image: 		url(images/grauerSkin_hgr_l.png) !important;
+	background-repeat: 		no-repeat  !important;
+	background-position: 	0px 0px  !important;
+	background-size:		32px 2000px  !important;
+}
+
+.cdmHeader .titleWrap,
+.expanded .cdmHeader .titleWrap {
+	padding-left: 10px !important;
+	padding-right: 8px !important;
+}
+
+div.cdm.active div.cdmHeader a.title, 
+div.cdm.active.Selected div.cdmHeader a.title,
+div.cdm.expanded.Unread div.cdmHeader a.title {
+    font-weight: normal !important;
+	font-style: normal !important;
+	color: rgb(0, 0, 0) !important;
+	font-size: 18px !important;
+	text-transform: uppercase !important;
+	font-family: Georgia,serif !important;
+}
+
+div.cdm.expanded div.cdmHeader a.title {
+	font-weight: lighter;
+	font-style: italic;
+	color: rgb(130, 130, 130);
+	font-size: 18px !important;
+	text-transform: uppercase;
+	font-family: Georgia,serif;
+}
+
+.Unread .cdmHeader a.title{
+    font-weight: normal;
+	font-style: normal;
+	color: rgb(0, 0, 0);
+	font-size: 14px !important;
+	text-transform: uppercase;
+	font-family: Georgia,serif;
+}
+.cdmHeader a.title{
+	font-weight: lighter;
+	font-style: italic;
+	color: rgb(130, 130, 130);
+	font-size: 1.4em !important;
+	text-transform: uppercase;
+	font-family: Georgia,serif;
+}
+
+.Selected .cdmHeader a.title{
+	font-size: 1.4em !important;
+}
+
+.cdmHeader span.author {
+    padding-left: 5px !important;
+    color: gray;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.cdmHeader .hlFeed,
+.cdmHeader span.updated,
+.cdmHeader span.updated ~ div{
+	vertical-align: top !important;
+}
+
+.cdmHeader .hlFeed{
+	text-align: right;
+}
+
+.cdmHeader .hlFeed a {
+    color: gray;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 8px;
+	display:block;
+	width:120px !important;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+div.cdmHeader > span {
+width:100%;
+}
+
+.cdmHeader span.updated,
+.cdmHeader span.updated ~ div{
+	width:auto !important;
+}
+
+
+
+div.cdmHeader span.updated {
+	padding-right: 5px !important;
+	padding-left:5px !important;
+    color: gray;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 8px;
+}
+
+
+.cdmContent {
+    background: rgba(246, 246, 246, 0) !important;
+	font-size: 1.2em !important;
+}
+
+.cdmContent a {
+    color: rgb(76, 70, 160) !important;
+	color: rgb(50, 50, 50) !important;
+	font-weight: bold;
+}
+
+.cdmContent a:hover {
+	color: rgb(80, 80, 220) !important;
+} 
+
+.cdmContentInner {
+    margin: 20px 50px 0px 80px !important;
+	overflow: hidden; 
+}
+
+div.cdmContentInner img {
+    border-width: 0px;
+    max-width: 98%;
+    height: auto;
+}
+
+.cdmFooter {
+
+	font-size: 0.9em;
+
+	padding: 4px 0px 4px 80px !important;
+    background-color : rgb(249, 249, 249) !important;
+	background-image: 		url(images/grauerSkin_hgr_l.png) !important;
+	background-repeat: 		no-repeat  !important;
+	background-position: 	0px 0px  !important;
+	background-size:		32px 2000px  !important;
+	
+	border-top: 1px solid rgba(30,30,30,0.1);
+	border-radius: 0px 0px 12px 0px;
+	box-shadow: -6px 0px 4px rgba( 30, 30, 30, 0.05) 
+}
+
+.cdmFooter a{
+	color: rgb(176, 176, 176) !important;
+}
+.cdmFooter a:hover {
+    color: rgb(6, 6, 6) !important;
+}
+
+span.cdmExcerpt {
+    font-size: 11px;
+    color: gray;
+    font-weight: normal;
+    cursor: pointer;
+    display: block;
+}
+

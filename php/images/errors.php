@@ -1,0 +1,14 @@
+var ERRORS = [];
+ERRORS[0] = "";
+ERRORS[1] = "This program requires XmlHttpRequest to function properly. Your browser doesn't seem to support it.";
+ERRORS[2] = "This program requires cookies to function properly. Your browser doesn't seem to support them.";
+ERRORS[3] = "Backend sanity check failed.";
+ERRORS[4] = "Frontend sanity check failed.";
+ERRORS[5] = "Incorrect database schema version. &lt;a href='db-updater.php'&gt;Please update&lt;/a&gt;.";
+ERRORS[6] = "Request not authorized.";
+ERRORS[7] = "No operation to perform.";
+ERRORS[8] = "Denied. Your access level is insufficient to access this page.";
+ERRORS[9] = "Configuration check failed";
+ERRORS[10] = "Your version of MySQL is not currently supported. Please see official site for more information.";
+ERRORS[11] = "[This error is not returned by server]";
+ERRORS[12] = "SQL escaping test failed, check your database and PHP configuration";
