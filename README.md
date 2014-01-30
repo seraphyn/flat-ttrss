@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Running on OpenShift
 ----------------------------
 
@@ -12,3 +13,9 @@ You can now checkout your RSS application at:
     http://<app name>-<your namespace>.rhcloud.com
 
 This app can be shared by multiple users. The default user credential is "admin"/"password".
+=======
+flat-ttrss
+==========
+
+Flat theme for Tiny Tiny RSS (http://tt-rss.org/).
+>>>>>>> 09dce0b5706a6866163649fbfbaee177f439e551
